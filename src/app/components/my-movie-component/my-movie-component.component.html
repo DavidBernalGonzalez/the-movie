@@ -1,0 +1,16 @@
+<p>my-movie-component works!</p>
+<div>
+  <b>ID: </b> {{movie.id}} <br>
+  <b>Title: </b> {{movie.title}} <br>
+  <b>Poster: </b> {{movie.poster}} <br>
+  <b>Synopsis: </b> {{movie.synopsis}} <br>
+  <b>Genres: </b> {{movie.genres}} <br>
+  <b>Year: </b> {{movie.year}} <br>
+  <b>Director: </b> {{movie.director}} <br>
+  <b>Actors: </b>
+  <div *ngFor="let actor of movie.actors">
+    - {{actor}} <br>
+  </div>
+  <b>Hours: </b> {{movie.hours}} <br>
+  <b>Room: </b> {{movie.room}} <br>
+</div>
