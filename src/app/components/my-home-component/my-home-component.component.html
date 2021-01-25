@@ -1,6 +1,13 @@
 <p>my-home-component works!</p>
-<ul>
-  <li *ngFor="let movie of moviesList; let i = index" [routerLink]="['/movie', movie.id]">
+<div id="wrapper">
+  <div *ngFor="let movie of moviesList; let i = index;">
+    <img [src]="movie.poster" [alt]="movie.title" [routerLink]="['/movie', movie.id]"
+    [ngClass]="hello(i)">
+  </div>
+</div>
+
+<!-- <ul>
+  <li *ngFor="let movie of moviesList; let i = index" >
     {{movie.title}}
   </li>
-</ul>
+</ul> -->
