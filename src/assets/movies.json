@@ -36,7 +36,7 @@
         "Sterling Hayden"
       ],
       "hours": "Miércoles de 19:30h a 22:30h",
-      "room": 5
+      "room": 2
     },
     {
       "id": 3,
@@ -55,7 +55,7 @@
         "Talia Shire"
       ],
       "hours": "Miércoles de 19:30h a 22:30h",
-      "room": 5
+      "room": 1
     },
     {
       "id": 4,
@@ -74,7 +74,7 @@
         "Gary Oldman"
       ],
       "hours": "Miércoles de 19:30h a 22:30h",
-      "room": 5
+      "room": 6
     },
     {
       "id": 5,
@@ -93,7 +93,7 @@
         "Embeth Dav"
       ],
       "hours": "Miércoles de 19:30h a 22:30h",
-      "room": 5
+      "room": 2
     }
   ]
 }

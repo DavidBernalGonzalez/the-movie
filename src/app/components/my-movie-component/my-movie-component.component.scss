@@ -1,0 +1,70 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  /* flex-wrap: wrap; */
+  background-color: white;
+  width: 60%;
+  border-radius: 35px;
+  height: fit-content;
+  border-radius: 35px;
+  align-self: center;
+  padding: 50px;
+}
+
+#movieInfo{
+  align-self: center;
+}
+
+.columnPoster {
+  width: 30%;
+}
+
+.column {
+  /* width: 25%;
+  flex: 50%; */
+}
+
+img {
+  width: 175px;
+  height: 250px;
+}
+/* .row {
+  background-color: blue;
+}
+.poster {
+  width: 90%;
+}
+
+.description {
+  width: 70%;
+}
+
+img {
+  width: 35%;
+}
+*/
+
+/*
+
+*/
+
+@media only screen and (max-width: 400px) {
+  .wrapper{
+
+  }
+
+  .row {
+    align-self: none;
+  }
+
+  .filmPoster {
+    margin: 5% 0;
+  }
+}

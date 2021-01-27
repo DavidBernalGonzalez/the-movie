@@ -1,7 +1,9 @@
 <div id="wrapper">
-  <div *ngFor="let movie of moviesList; let i = index;" [ngClass]="hello(i)">
-    <h3>{{movie.title}}</h3> <br>
+  <div *ngFor="let movie of moviesList; let i = index;" class="filmPoster">
+    <h3>ROOM {{movie.room}}</h3>
 
     <img [src]="movie.poster" [alt]="movie.title" [routerLink]="['/movie', movie.id]">
+
+    <h3>{{movie.title}}</h3>
   </div>
 </div>

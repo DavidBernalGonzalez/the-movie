@@ -21,22 +21,25 @@
   border-radius: 30px;
 }
 
+.column{
+  align-self: center;
+}
+
 img {
   width: 140px;
   height: 200px;
 }
 
-h1{
+h1 {
   color: white;
 }
 
 @media only screen and (max-width: 400px) {
   #wrapper {
     align-content: unset;
+  }
 
-}
-
-.filmPoster {
-  margin: 5% 0;
-}
+  .filmPoster {
+    margin: 5% 0;
+  }
 }

@@ -20,8 +20,4 @@ export class MyHomeComponentComponent implements OnInit {
         console.log(this.moviesList);
       });
   }
-
-  hello(i: number): string{
-    return 'filmPoster' + ' filmPoster' + i;
-  }
 }
