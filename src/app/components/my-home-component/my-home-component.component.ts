@@ -17,7 +17,7 @@ export class MyHomeComponentComponent implements OnInit {
       .getMovies()
       .subscribe((data: any) => {
         this.moviesList = data.movies;
-        console.log(this.moviesList);
+        // console.log(this.moviesList);
       });
   }
 }

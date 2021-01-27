@@ -1,7 +1,7 @@
 import { Movie } from './../../shared/interfaces/movies.interface';
 import { MoviesService } from './../../shared/services/movies.service';
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -16,19 +16,23 @@ export class MyMovieComponentComponent implements OnInit, OnDestroy {
   subscription!: Subscription;
   constructor(
     private route: ActivatedRoute,
-    private moviesService: MoviesService
+    private moviesService: MoviesService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
     this.id = this.route.snapshot.paramMap.get('id');
-    alert(this.id);
-    alert(typeof this.id);
+
     this.subscription = this.moviesService
       .getMovies()
       .subscribe((data: any) => {
         this.moviesList = data.movies;
-        this.movie = this.moviesList[this.id];
-        console.log(this.moviesList[0]);
+        if (this.moviesList[this.id]) {
+          this.movie = this.moviesList[this.id];
+        } else {
+          alert('Error, the movie not exist');
+          this.router.navigate(['/role']);
+        }
       });
   }
 
