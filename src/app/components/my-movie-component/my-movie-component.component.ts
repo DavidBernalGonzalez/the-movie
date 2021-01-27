@@ -27,8 +27,8 @@ export class MyMovieComponentComponent implements OnInit, OnDestroy {
       .getMovies()
       .subscribe((data: any) => {
         this.moviesList = data.movies;
-        if (this.moviesList[this.id]) {
-          this.movie = this.moviesList[this.id];
+        if (this.moviesList[(this.id - 1)]) {
+          this.movie = this.moviesList[(this.id - 1)];
         } else {
           alert('Error, the movie not exist');
           this.router.navigate(['/role']);
